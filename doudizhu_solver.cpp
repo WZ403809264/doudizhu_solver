@@ -82,7 +82,7 @@ int paixing(string card)
 		}
 		case 2:{
 			if(len==2) return 2;
-			if(len&1==0&&len>=6)
+			if(len%2==0&&len>=6)
 			{
 				for(int i=0;i<len-2;i+=2)
 				{
@@ -150,7 +150,7 @@ int paixing(string card)
 		}
 	}
 }
-int banmove[10],banmoves;
+int banmove[100],banmoves;
 bool canplay(string next_hand,string last_hand)
 {
 	int px=paixing(next_hand);
@@ -211,6 +211,7 @@ int generatemoves(string my_cards,string last_hand,string*next_hand)
 	}
 	return nextlen;
 }
+map<string,int>mp;
 string searchresult;
 long long node=0;
 clock_t start,end;
@@ -220,6 +221,7 @@ int search(string my_cards,string enemy_cards,string last_hand,int depth)
 	{
 		return -1;
 	}
+	if(depth>=1&&mp[my_cards+"-"+enemy_cards+"-"+last_hand]!=0) return mp[my_cards+"-"+enemy_cards+"-"+last_hand];
 	string mvs[100];
 	int moves=generatemoves(my_cards,last_hand,mvs);
 	for(int i=0;i<moves;i++)
@@ -240,10 +242,12 @@ int search(string my_cards,string enemy_cards,string last_hand,int depth)
 		if(search(enemy_cards,del(my_cards,mvs[i]),mvs[i],depth+1)==-1)
 		{
 			if(depth==0) searchresult=mvs[i];
+			mp[my_cards+"-"+enemy_cards+"-"+last_hand]=1;
 			return 1;
 		}
 	}
 	if(depth==0) searchresult=mvs[0];
+	mp[my_cards+"-"+enemy_cards+"-"+last_hand]=-1;
 	return -1;
 }
 string output[17]={"不出","3","4","5","6","7","8","9","10","J","Q","K","A","不出","2","小王","大王"};
@@ -294,6 +298,7 @@ int main()
 		}
 	}
 	start=end=clock();
+	mp.clear();
 	printf("正在计算……\n");
 	int result=search(p1,p2,last,0);
 	print(result);
