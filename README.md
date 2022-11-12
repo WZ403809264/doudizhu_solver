@@ -49,7 +49,7 @@ The output is shown in the figure below. 输出如下图所示。
 |KK5543|225543|offensive wins|0.17s|0.045s|0.62s|
 |ZA54333|Y222KQ|offensive wins|0.32s|0.059s|0.682s|
 |2KK0077554|AA8|defensive wins|0.581s|output error|3.066s|
-|ZKKQJ09876633|AAKQJ0987|offensive wins|1.288s|106.637|time out|
+|ZKKQJ09876633|AAKQJ0987|offensive wins|1.288s|106.637s|time out|
 |2AK096554|YKJ08854|offensive wins|2.889s|2.766s|10.556s|
 |ZYAAKKQ0099|2222JJ00|offensive wins|4.825s|2.311s|11.952s|
 |Y2AK998553|ZQQJJ0953|offensive wins|6.48s|2.997s|169.951s|
