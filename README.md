@@ -41,3 +41,16 @@ As shown in the figure below. 如下图所示。
 The output is shown in the figure below. 输出如下图所示。
 
 ![](https://i.postimg.cc/9fVzyjbX/image.png)
+
+## Compared to other doudizhu_solver 和其它斗地主残局解题器的比较
+
+|先手方offensive|后手方defensive|结果result|WZ403809264|iWoz|An0nym6|
+|:----:|:----:|:----:|:----:|:----:|:----:|
+|KK5543|225543|offensive wins|0.17s|0.045s|0.62s|
+|ZA54333|Y222KQ|offensive wins|0.32s|0.059s|0.682s|
+|2KK0077554|AA8|defensive wins|0.581s|output error|3.066s|
+|ZKKQJ09876633|AAKQJ0987|offensive wins|1.288s|106.637|time out|
+|2AK096554|YKJ08854|offensive wins|2.889s|2.766s|10.556s|
+|ZYAAKKQ0099|2222JJ00|offensive wins|4.825s|2.311s|11.952s|
+|Y2AK998553|ZQQJJ0953|offensive wins|6.48s|2.997s|169.951s|
+|ZAQQJJ0999844|Y22AA0886633|offensive wins|97.865s|time out|time out|
