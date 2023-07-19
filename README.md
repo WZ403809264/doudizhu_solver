@@ -36,7 +36,7 @@ program input：22220076543333\nZYJJ999\n1\n32\n
 
 As shown in the figure below. 如下图所示。
 
-![](https://i.postimg.cc/NGRVzqkv/image.png)
+![](https://camo.githubusercontent.com/3e418a16dcfb60714c4fe1eeb5c9da574e84400207201025e2fb82e10ed6b45b/68747470733a2f2f692e706f7374696d672e63632f4e4752567a716b762f696d6167652e706e67)
 
 The output is shown in the figure below. 输出如下图所示。
 
