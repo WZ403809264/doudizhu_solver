@@ -40,7 +40,7 @@ As shown in the figure below. 如下图所示。
 
 The output is shown in the figure below. 输出如下图所示。
 
-![](https://i.postimg.cc/9fVzyjbX/image.png)
+![](https://camo.githubusercontent.com/d552fa644ea598073b1ddfc1f38e31a21f07f573dd8339fbad9521cd3d7aad5e/68747470733a2f2f692e706f7374696d672e63632f3966567a796a62582f696d6167652e706e67)
 
 ## Compared to other doudizhu_solver 和其它斗地主残局解题器的比较
 
